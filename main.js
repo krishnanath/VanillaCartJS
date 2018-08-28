@@ -106,3 +106,13 @@ addToCartButtonsDOM.forEach(addToCartButtonDOM => {
 <button class="btn btn--primary btn--small" data-action="INCREASE_ITEM">&plus;</button>
 <button class="btn btn--danger btn--small" data-action="REMOVE_ITEM">&times;</button>
 </div>
+
+addToCartButtonsDOM.forEach(addToCartButtonDOM => {
+  addToCartButtonDOM.addEventListener('click', () => {
+    const productDOM = addToCartButtonDOM.parentNode;
+    const product = {
+      image: productDOM.querySelector('.product__image').getAttribute('src'),
+      name: productDOM.querySelector('.product__name').innerText,
+      price: productDOM.querySelector('.product__price').innerText,
+      quantity: 1,
+    };
