@@ -164,3 +164,11 @@ function saveCart() {
   localStorage.setItem('cart', JSON.stringify(cart));
   countCartTotal();
 }
+
+//remove
+if (!isInCart) {
+  insertItemToDOM(product);
+  cart.push(product);
+saveCart();
+  handleActionButtons(addToCartButtonDOM, product);
+}
