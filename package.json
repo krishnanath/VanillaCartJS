@@ -3,17 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://krishnanath.github.io/VanillaCartJS",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/krishnanath/VanillaCartJS.git"
+    "deploy": "gh-pages -d dist"
   },
   "author": "krishnanath",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/krishnanath/VanillaCartJS/issues"
-  },
-  "homepage": "https://github.com/krishnanath/VanillaCartJS#readme"
+  "dependencies": {
+    "gh-pages": "^1.2.0"
+  }
 }
